@@ -16,14 +16,4 @@ Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 
-Route::get('/spoiler', function () {
-    return 'voce nao devia estar aqui';
-});
-
-Route::get('/about', function () {
-    return view('pages.about');
-});
-
-Route::get('/users/{id}/{name}', function($id, $name) {
-    return 'This is user ' . $name . ' with a Id of ' . $id;
-});
+Route::resource('posts', 'PostsController');
