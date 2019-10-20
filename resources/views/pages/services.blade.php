@@ -2,7 +2,6 @@
 
 @section('content')
     <h1>{{$title}}</h1>
-    <h2>Serviços</h2>
     <p>
         Algumas descrições de serviços.
     </p>
