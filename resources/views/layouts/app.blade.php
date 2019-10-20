@@ -7,6 +7,7 @@
         <title>{{config('app.name', 'GXAPP')}}</title>
     </head>
     <body>
+        @include('inc.navbar')
         <div class="container">
             @yield('content')
         </div>
