@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index() {
-        $title = 'Bem-vindo ao FastSell!';
+        $title = 'Welcome to GXAPP!';
         // return view('pages.index', compact('title'));
         // In this otherway we can pass even a array
         return view('pages.index')->with('title', $title);
     }
 
     public function about() {
-        $title = 'Sobre o FastSell';
+        $title = 'About The GXAPP';
         return view('pages.about')->with('title', $title);
     }
 
